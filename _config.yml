@@ -1,0 +1,71 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Laurent Dinh
+description: >- # this means to ignore newlines until "baseurl:"
+  Machine learning researcher.
+baseurl: "" # the subpath of the site
+url: "https://laurent-dinh.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile.jpg
+email: lastname.firstname@gmail.com
+blog_name: "Thesis by Blogpost"
+# google_analytics: "UA-121636368-3"
+
+header:
+  pages:
+    - name: Home
+      slug: /
+    - name: News
+      slug: /#news
+    - name: Resume
+    - name: Publications
+      slug: /resume#publications-and-preprints
+    - name: Talks
+      slug: /resume#talks
+    - name: Blog
+    - name: Resources
+
+footer:
+  show_powered_by: false
+  contact:
+    - name: Email
+      logo: fas fa-envelope
+      value: lastname.firstname@gmail.com
+      link: mailto:lastname.firstname@gmail.com
+  follow:
+    - name: Twitter
+      logo: fab fa-twitter
+      link: http://twitter.com/laurent_dinh
+      username: "@laurent_dinh"
+    - name: LinkedIn
+      logo: fab fa-linkedin
+      link: http://linkedin.com/in/laurent-dinh-b9287237
+    - name: GitHub
+      logo: fab fa-github
+      link: http://github.com/laurent-dinh
+    - name: Scholar
+      logo: ai ai-google-scholar-square
+      link: https://scholar.google.ca/citations?user=h7OHSkoAAAAJ
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1

@@ -1,0 +1,38 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@charset "utf-8";
+
+// Our variables
+$base-url: "{{ site.baseurl }}";
+
+$base-font-family: "Roboto Condensed", Charter, Georgia, Helvetica, Arial, sans-serif;
+$monospace-font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
+$base-font-size: 17.5px;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.7;
+
+$spacing-unit: 40px;
+
+$text-color: #111;
+$background-color: #fdfdfd;
+$brand-color: #8c2323;
+$lighter-brand-color: lighten($brand-color, 40%);
+
+$grey-color: #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$on-mobile: 620px;
+$on-laptop: 800px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import "base", "layout", "site", "work", "blog", "post", "404";
